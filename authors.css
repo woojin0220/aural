@@ -1,32 +1,33 @@
 .hero-credit {
   margin-top: 32px;
   padding-top: 22px;
-  border-top: 1px solid rgba(32, 36, 32, .18);
+  border-top: 1px solid rgba(255, 255, 255, .5);
   max-width: 860px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, .75);
 }
 
 .hero-authors {
   margin: 0;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.65;
-  color: #243029;
+  color: #fff;
 }
 
 .hero-authors span {
-  color: #8d998c;
+  color: rgba(255, 255, 255, .78);
   margin: 0 .35em;
 }
 
 .hero-affiliation {
   margin: 5px 0 0;
-  color: #62705f;
-  font-size: 15px;
+  color: #fff;
+  font-size: 16px;
   letter-spacing: .02em;
 }
 
 @media (max-width: 700px) {
   .hero-credit { margin-top: 24px; padding-top: 18px; }
-  .hero-authors { font-size: 15px; }
-  .hero-affiliation { font-size: 14px; }
+  .hero-authors { font-size: 16px; }
+  .hero-affiliation { font-size: 15px; }
 }
