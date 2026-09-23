@@ -1,0 +1,63 @@
+.demo-content img{height:auto;display:block;border-radius:4px}.demo-content>div{min-width:0}.question{margin-top:0;font-weight:600}.choices{padding-left:24px;font-size:14px;color:#596155}.choices li{padding:3px 0}.qa+.qa{margin-top:28px;padding-top:22px;border-top:1px solid #e7eae3}.demo-nav{flex-wrap:wrap;margin:24px 0 56px;gap:12px 24px}.demo-nav a{border-bottom:1px solid #a8b69b}.scope-heading{margin:36px 0 10px;font-size:18px;font-weight:500;color:#566650}.scope-heading+.demo-card{margin-top:0}.task-section{margin-top:65px}.task-section>h2{border-bottom:1px solid #c8d1c0;padding-bottom:20px}.demo-card h3{font-size:20px;margin-top:6px}.answer{font-size:14px}.demo-card{scroll-margin-top:40px}audio{display:block}header nav a:hover,.demo-nav a:hover{color:#477f2b}
+.question-switcher{border:0;padding:0;margin:0;min-width:0}.question-switcher legend{font-size:13px;color:#626c5a;margin-bottom:12px}.question-radio{position:absolute;width:1px;height:1px;opacity:0}.question-tab{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border:1px solid #d5ddce;border-radius:50%;margin:0 6px 12px 0;cursor:pointer;font-size:13px}.question-radio:checked+.question-tab{background:#526f3e;border-color:#526f3e;color:white}.question-radio:focus-visible+.question-tab{outline:3px solid #a5bb90;outline-offset:3px}.question-page{display:none;flex-direction:column;min-height:430px}.question-page.qa+.qa{margin:0;padding:0;border:0}.question-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:20px;font-size:13px}.question-controls label{cursor:pointer;padding:8px 12px;border:1px solid #d5ddce;border-radius:4px}.question-controls label:hover{background:#f1f5ed}.demo-card>.task-label{margin-bottom:20px}@media(max-width:700px){.question-page{min-height:400px}}
+.charts figure:last-child{grid-column:auto;width:100%;margin:0}.benchmark-heading{font-size:23px;margin-top:44px}.charts{gap:36px}
+.charts .chart-solo{grid-column:1/-1;width:min(100%,600px);margin:auto}.charts .chart-solo figure:last-child{width:100%;margin:0}
+.results-table tr:last-child{background:transparent}.results-table tr.main-model{background:#eaf2e5}.results-table tr.ablation{background:#f7f9f5}
+.results-table--spatialsoundqa{min-width:1040px;table-layout:fixed;font-variant-numeric:tabular-nums}.results-table--spatialsoundqa .system-column{width:18%}.results-table--spatialsoundqa .metric-column{width:9.111%}.results-table--spatialsoundqa th[rowspan="3"]{vertical-align:middle}.results-table--spatialsoundqa thead th{text-align:center;white-space:nowrap;vertical-align:middle}.results-table--spatialsoundqa thead tr:first-child>th:first-child,.results-table--spatialsoundqa tbody th{text-align:left}.results-table--spatialsoundqa tbody td{text-align:center}.results-table--spatialsoundqa thead tr:first-child th:nth-child(3),.results-table--spatialsoundqa thead tr:nth-child(2) th:nth-child(n+2),.results-table--spatialsoundqa thead tr:nth-child(3) th:nth-child(3),.results-table--spatialsoundqa thead tr:nth-child(3) th:nth-child(5),.results-table--spatialsoundqa thead tr:nth-child(3) th:nth-child(7),.results-table--spatialsoundqa tbody td:nth-child(4),.results-table--spatialsoundqa tbody td:nth-child(6),.results-table--spatialsoundqa tbody td:nth-child(8){border-left:1px solid #cfd6ca}
+.hero{position:relative;isolation:isolate;padding:100px 0;margin:0 0 80px;background:none}
+.hero::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);z-index:-1;background:linear-gradient(90deg,rgba(23,29,27,.76),rgba(23,29,27,.49) 48%,rgba(23,29,27,.70)),url("assets/hero-recording-studio.jpg") center 53%/cover no-repeat;filter:saturate(.76) contrast(.96) brightness(.80)}
+.hero::after{content:"";position:absolute;inset:0;left:50%;width:100vw;transform:translateX(-50%);z-index:-1;background:linear-gradient(180deg,rgba(10,14,13,.12),rgba(10,14,13,.26))}
+.hero h1{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.32)}
+body{overflow-x:clip}
+.hero h1{max-width:1040px;margin:0 auto;font-weight:500;letter-spacing:-1.1px;line-height:1.25;font-size:clamp(28px,3.6vw,44px);text-wrap:balance}
+.hero-name{display:block;font-size:clamp(42px,5.5vw,64px);letter-spacing:-2px;margin-bottom:20px;font-weight:600}
+.sources{margin-bottom:70px}.sources>p{font-size:14px;color:#6b7269;margin:-16px 0 18px}.source-group{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:9px 0;border-top:1px solid #e4e8df;font-size:13px}.source-group:last-child{border-bottom:1px solid #e4e8df}.source-label{min-width:126px;color:#687265}.source-group a{color:#526f3e;text-decoration:underline;text-underline-offset:3px}.source-group a:hover{color:#283d1b}
+@media(max-width:700px){.hero{padding:64px 0;margin:0 0 60px}.hero h1{font-size:28px;letter-spacing:-.6px}.hero .hero-name{font-size:44px}.source-group{gap:6px 12px}.source-label{flex-basis:100%;font-size:12px}}
+.demo-content{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:48px;row-gap:8px}.scene-model-output-pages{grid-column:1/-1}.scene-model-output-page{display:none;margin:8px 0 0;padding-top:14px;border-top:1px solid #e2e7df}.scene-model-output-page.is-active{display:block}.model-output-heading{margin:0 0 8px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#65705f}.scene-output-table-scroll{overflow-x:auto}.scene-output-table{width:100%;min-width:100%;table-layout:fixed;font-size:12px}.scene-output-table th,.scene-output-table td{width:16.666%;padding:9px 11px;text-align:left;vertical-align:top;white-space:normal;overflow-wrap:break-word}.scene-output-table th{font-weight:600;background:#f1f4ee}.scene-output-table td,.scene-output-table tr:last-child td{background:#fff!important;line-height:1.45}.scene-output-table .output-correct{box-shadow:inset 0 -2px #9cbd8a}.scene-output-table .output-wrong{color:#b42318;box-shadow:inset 0 -3px #d92d20;font-weight:600}@media(max-width:700px){.demo-content{grid-template-columns:1fr}.scene-model-output-pages{grid-column:auto}.scene-output-table{min-width:900px}}
+.scene-output-table .output-wrong{box-shadow:inset 0 -2px #d92d20}
+
+/* Keep scene-question paging as compact as the EchoSpeech controls. */
+.question-page{position:relative;min-height:0;padding-top:0}
+.question-page>h3{padding-right:176px}
+.question-controls{position:absolute;top:0;right:0;margin:0;padding:0;gap:7px;font-size:11px}
+.question-controls label{padding:4px 7px;border-radius:3px}
+.question-controls span{min-width:34px;text-align:center;color:#5e665b}
+.scene-model-output-page{margin-top:0;padding-top:6px}
+@media(max-width:700px){.question-page>h3{padding-right:0}.question-controls{position:static;justify-content:flex-end;margin:8px 0 0}}
+
+/* Reserve two lines for the prompt so wrapping does not shift its controls or outputs. */
+.question-page .question{min-height:3.2em;line-height:1.6}
+.question-page .question{margin:0 0 5px}
+.question-page .choices{min-height:120px;margin:0 0 9px}
+.question-controls,.question-controls label{-webkit-user-select:none;user-select:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+
+/* Match EchoSpeech example navigation. */
+.question-controls{gap:7px}
+.question-controls .question-control-button{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;border-radius:50%;font-size:15px;line-height:1}
+.question-controls .question-control-status{min-width:76px;font-size:12px;color:#5e665b;text-align:center}
+
+/* EchoScene mirrors the EchoSpeech condition tabs; arrows page whole scenes. */
+.scene-task-toolbar{position:relative;min-height:40px;margin-bottom:4px}
+.scene-condition-tabs{display:inline-flex;align-items:center;gap:3px;padding:3px;border:1px solid #dbe2d5;border-radius:8px;background:#f4f6f2}
+.scene-condition-radio{position:absolute;width:1px;height:1px;opacity:0}
+.scene-condition-tab{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 12px;border:0;border-radius:5px;color:#5b6654;background:transparent;font-size:12px;font-weight:500;letter-spacing:.005em;cursor:pointer;user-select:none}
+.scene-condition-radio:checked+.scene-condition-tab{color:#fff;background:#526f3e;box-shadow:0 1px 2px rgb(38 59 28 / .18)}
+.scene-condition-radio:focus-visible+.scene-condition-tab{outline:3px solid #a5bb90;outline-offset:3px}
+.scene-condition-page{display:none;margin:0}
+.scene-carousel-controls{position:absolute;top:0;left:var(--scene-condition-tabs-width);display:flex;align-items:center;gap:7px;margin:3px 0 0}
+.scene-carousel-button{width:30px;height:30px;border:1px solid #d5ddce;border-radius:50%;background:#fff;cursor:pointer;font-size:15px;line-height:1}
+.scene-carousel-button:hover:not(:disabled){background:#f1f5ed}.scene-carousel-button:disabled{opacity:.35;cursor:default}
+.scene-carousel-status{min-width:68px;font-size:12px;color:#5e665b;text-align:center}
+.scene-carousel{display:flex;overflow:hidden;width:100%}.scene-carousel-card{flex:0 0 100%;width:100%;max-width:none}
+.scene-carousel-card.demo-card{margin-top:18px}
+@media(max-width:700px){.scene-condition-tabs{display:flex;flex-wrap:wrap;margin-bottom:8px}.scene-carousel-controls{position:static;justify-content:flex-end;margin:0 0 6px}}
+
+/* Keep the image, QA and output aligned when a question has longer text. */
+.question-pages,.scene-model-output-pages{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;width:100%}
+.question-page,.scene-model-output-page{grid-area:1/1;min-width:0;visibility:hidden;pointer-events:none}
+.question-page{display:flex}
+.scene-model-output-page{display:block}
+.scene-model-output-page.is-active{visibility:visible;pointer-events:auto}
+/* Anchor keyboard-focus targets inside the active question panel. */
+.question-switcher{position:relative}
+.question-switcher .question-radio{left:0;top:0;margin:0}

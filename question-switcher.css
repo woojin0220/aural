@@ -1,0 +1,37 @@
+#scene-3576-SNP-without_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-3576-SNP-without_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+#scene-3576-SNP-without_SCU-2:checked ~ .question-pages > .page-2{visibility:visible;pointer-events:auto}
+#scene-3576-SNP-without_SCU-3:checked ~ .question-pages > .page-3{visibility:visible;pointer-events:auto}
+#scene-1816-SNP-without_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-1816-SNP-without_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+#scene-1816-SNP-without_SCU-2:checked ~ .question-pages > .page-2{visibility:visible;pointer-events:auto}
+#scene-3607-SNP-with_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-3607-SNP-with_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+#scene-3607-SNP-with_SCU-2:checked ~ .question-pages > .page-2{visibility:visible;pointer-events:auto}
+#scene-3607-SNP-with_SCU-3:checked ~ .question-pages > .page-3{visibility:visible;pointer-events:auto}
+#scene-3607-SNP-with_SCU-4:checked ~ .question-pages > .page-4{visibility:visible;pointer-events:auto}
+#scene-1065-SRR-without_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-1065-SRR-without_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+#scene-1065-SRR-without_SCU-2:checked ~ .question-pages > .page-2{visibility:visible;pointer-events:auto}
+#scene-3568-SRR-without_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-2864-SRR-with_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-2864-SRR-with_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+#scene-2864-SRR-with_SCU-2:checked ~ .question-pages > .page-2{visibility:visible;pointer-events:auto}
+#scene-2631-SRR-with_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-1444-MRR-without_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-2379-MRR-without_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-2379-MRR-without_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+#scene-5424-MRR-without_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-5424-MRR-without_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+#scene-5424-MRR-without_SCU-2:checked ~ .question-pages > .page-2{visibility:visible;pointer-events:auto}
+#scene-2454-MRR-with_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-6914-MRR-with_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-207-MRR-with_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-1444-MRR-with_SCU-0:checked ~ .question-pages > .page-0{visibility:visible;pointer-events:auto}
+#scene-1444-MRR-with_SCU-1:checked ~ .question-pages > .page-1{visibility:visible;pointer-events:auto}
+.scene-task:has(#scene-snp-scope-0:checked) .scene-condition-pages > .page-0{display:block}
+.scene-task:has(#scene-snp-scope-1:checked) .scene-condition-pages > .page-1{display:block}
+.scene-task:has(#scene-srr-scope-0:checked) .scene-condition-pages > .page-0{display:block}
+.scene-task:has(#scene-srr-scope-1:checked) .scene-condition-pages > .page-1{display:block}
+.scene-task:has(#scene-mrr-scope-0:checked) .scene-condition-pages > .page-0{display:block}
+.scene-task:has(#scene-mrr-scope-1:checked) .scene-condition-pages > .page-1{display:block}

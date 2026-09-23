@@ -1,0 +1,32 @@
+.interactive-chart svg{display:block;width:100%;height:auto;margin-inline:auto}
+/* Normalize the visible radar-circle diameter while preserving label margins. */
+.chart-spatialsoundqa svg{width:94.5%}
+.chart-speech-stl svg{width:80.7%}
+.chart-speech-tst svg{width:81.5%}
+.chart-scene-without-scu svg{width:84.5%}
+.chart-scene-with-scu svg{width:85.4%}
+.chart-star-bench svg{width:87.3%}
+.chart-bidepth svg{width:100%}
+.model-series,.model-label,.model-handle,.model-fill{transition:opacity .15s ease}
+.model-series,.model-label,.model-handle{cursor:pointer}
+.model-series path{pointer-events:stroke}
+.model-fill{pointer-events:none}
+.model-label:focus{outline:none}
+.interactive-chart:has(:is(.model-series,.model-label,.model-handle):hover,.model-label:focus-visible) :is(.model-series,.model-label,.model-handle,.model-fill){opacity:.16}
+.interactive-chart:has(.model-hit-0:hover,.model-hit-0:focus-visible) .model-hit-0,
+.interactive-chart:has(.model-hit-1:hover,.model-hit-1:focus-visible) .model-hit-1,
+.interactive-chart:has(.model-hit-2:hover,.model-hit-2:focus-visible) .model-hit-2,
+.interactive-chart:has(.model-hit-3:hover,.model-hit-3:focus-visible) .model-hit-3,
+.interactive-chart:has(.model-hit-4:hover,.model-hit-4:focus-visible) .model-hit-4,
+.interactive-chart:has(.model-hit-5:hover,.model-hit-5:focus-visible) .model-hit-5,
+.interactive-chart:has(.model-hit-6:hover,.model-hit-6:focus-visible) .model-hit-6,
+.interactive-chart:has(.model-hit-7:hover,.model-hit-7:focus-visible) .model-hit-7{opacity:1}
+.interactive-chart:has(.model-hit-0:hover,.model-hit-0:focus-visible) .model-series.model-hit-0 path,
+.interactive-chart:has(.model-hit-1:hover,.model-hit-1:focus-visible) .model-series.model-hit-1 path,
+.interactive-chart:has(.model-hit-2:hover,.model-hit-2:focus-visible) .model-series.model-hit-2 path,
+.interactive-chart:has(.model-hit-3:hover,.model-hit-3:focus-visible) .model-series.model-hit-3 path,
+.interactive-chart:has(.model-hit-4:hover,.model-hit-4:focus-visible) .model-series.model-hit-4 path,
+.interactive-chart:has(.model-hit-5:hover,.model-hit-5:focus-visible) .model-series.model-hit-5 path,
+.interactive-chart:has(.model-hit-6:hover,.model-hit-6:focus-visible) .model-series.model-hit-6 path,
+.interactive-chart:has(.model-hit-7:hover,.model-hit-7:focus-visible) .model-series.model-hit-7 path{stroke-width:3.5!important}
+@media(prefers-reduced-motion:reduce){.interactive-chart g{transition:none}}

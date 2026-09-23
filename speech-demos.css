@@ -1,0 +1,25 @@
+.speech-condition{margin-top:48px;scroll-margin-top:30px}.speech-condition>h3{font-size:21px;border-bottom:1px solid #dce2d7;padding-bottom:12px}.speech-carousel{display:flex;overflow:hidden;width:100%}.speech-example{flex:0 0 100%;width:100%;max-width:none;margin:18px 0 34px}.speech-example h4{font-weight:500;margin-bottom:6px}.speech-example audio{margin:12px 0 22px}.speech-response{padding:12px 17px;margin:8px 0;border-radius:8px;font-size:14px;overflow-wrap:anywhere}.speech-response p{margin:5px 0 0;line-height:1.65}.response-heading{display:flex;justify-content:space-between;gap:12px;align-items:baseline}.response-heading span{font-size:11px;color:#5e635c;text-align:right}.speech-question{background:#eaf1f8}.speech-ground-truth{background:#faf3d7}.speech-other{background:#f6f5ef}.speech-ours{background:#f2e6f2}.speech-baseline{background:#edf4e8}.speech-baselines{border:0;padding:8px 0}.speech-baselines summary{font-size:13px;color:#596453;margin-bottom:10px}.speech-carousel-controls{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin:12px 0 0}.speech-carousel-button{width:34px;height:34px;border:1px solid #d5ddce;border-radius:50%;background:#fff;cursor:pointer;font-size:17px}.speech-carousel-button:hover:not(:disabled){background:#f1f5ed}.speech-carousel-button:disabled{opacity:.35;cursor:default}.speech-carousel-status{font-size:13px;color:#5e665b;min-width:104px;text-align:center}#speech-demos>.demo-nav{display:flex}#speech-demos{margin-top:90px}@media(max-width:600px){.speech-response{padding:12px}.response-heading{align-items:flex-start}.speech-condition>h3{font-size:18px}}
+.speech-condition{contain:layout}@media(max-width:700px){header{height:auto;min-height:72px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px;gap:10px}header nav{flex-wrap:wrap;gap:10px 14px}}
+
+/* One compact condition switcher for each EchoSpeech task. */
+.speech-task{margin-top:54px;scroll-margin-top:30px}
+.speech-task>h3{font-size:21px;border-bottom:1px solid #dce2d7;padding-bottom:12px;margin-bottom:16px}
+.speech-condition-radio{position:absolute;width:1px;height:1px;opacity:0}
+.speech-condition-tab{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:4px 11px;margin:0 7px 12px 0;border:1px solid #d5ddce;border-radius:4px;font-size:13px;cursor:pointer;user-select:none}
+.speech-condition-radio:checked+.speech-condition-tab{color:#fff;background:#526f3e;border-color:#526f3e}
+.speech-condition-radio:focus-visible+.speech-condition-tab{outline:3px solid #a5bb90;outline-offset:3px}
+.speech-condition-page{display:none;margin:0}
+.speech-condition-page{contain:initial}
+#speech-stl-condition-0:checked~.speech-condition-pages>.page-0,#speech-stl-condition-1:checked~.speech-condition-pages>.page-1,#speech-stl-condition-2:checked~.speech-condition-pages>.page-2,#speech-tst-condition-0:checked~.speech-condition-pages>.page-0,#speech-tst-condition-1:checked~.speech-condition-pages>.page-1,#speech-tst-condition-2:checked~.speech-condition-pages>.page-2,#speech-tst-condition-3:checked~.speech-condition-pages>.page-3{display:block}
+@media(max-width:600px){.speech-task>h3{font-size:18px}.speech-condition-tab{font-size:12px;margin-right:5px}}
+
+/* Refined task switcher: selected condition and example paging share one toolbar. */
+.speech-task-toolbar{position:relative;min-height:40px}
+.speech-condition-tabs{display:inline-flex;align-items:center;gap:3px;padding:3px;border:1px solid #dbe2d5;border-radius:8px;background:#f4f6f2}
+.speech-condition-tab{min-height:30px;margin:0;padding:4px 12px;border:0;border-radius:5px;color:#5b6654;background:transparent;font-size:12px;font-weight:500;letter-spacing:.005em}
+.speech-condition-radio:checked+.speech-condition-tab{background:#526f3e;border-color:#526f3e;box-shadow:0 1px 2px rgb(38 59 28 / .18)}
+.speech-condition-page .speech-carousel-controls{position:absolute;top:0;right:auto;left:var(--condition-tabs-width);margin:3px 0 0;gap:7px}
+.speech-condition-page .speech-carousel-button{width:30px;height:30px;font-size:15px}
+.speech-condition-page .speech-carousel-status{min-width:68px;font-size:12px}
+#speech-stl:has(#speech-stl-condition-0:checked) .speech-condition-pages>.page-0,#speech-stl:has(#speech-stl-condition-1:checked) .speech-condition-pages>.page-1,#speech-stl:has(#speech-stl-condition-2:checked) .speech-condition-pages>.page-2,#speech-tst:has(#speech-tst-condition-0:checked) .speech-condition-pages>.page-0,#speech-tst:has(#speech-tst-condition-1:checked) .speech-condition-pages>.page-1,#speech-tst:has(#speech-tst-condition-2:checked) .speech-condition-pages>.page-2,#speech-tst:has(#speech-tst-condition-3:checked) .speech-condition-pages>.page-3{display:block}
+@media(max-width:700px){.speech-condition-tabs{display:flex;flex-wrap:wrap;margin-bottom:8px}.speech-condition-page .speech-carousel-controls{position:static;justify-content:flex-end;margin:0 0 6px}}

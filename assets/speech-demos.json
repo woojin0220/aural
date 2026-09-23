@@ -1,0 +1,598 @@
+[
+  {
+    "id": "stl-1spk-03895",
+    "condition": "stl/1spk",
+    "source": "stl/1spk/03895/log.txt",
+    "question": "Write out each person's speech and annotate it with their spatial position.",
+    "models": {
+      "af3": {
+        "response": "Transcription: Cinema is a communal experience. | Location: N/A; 0.98 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "afnext": {
+        "response": "Transcription: Cinema is a communal experience. | Location: above,front,left; 5.08 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "kimia": {
+        "response": "Transcription: Cinema is a communal experience. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=OK]",
+        "label": "WRONG"
+      },
+      "midashenglm": {
+        "response": "Transcription: Cinema is a communal experience. | Location: above,front,left; 2.50 m  [text=OK, doa=X, dist=OK]",
+        "label": "WRONG"
+      },
+      "qwen2audio": {
+        "response": "Transcription: She has been described as having ginger hair and blue eyes. | Location: behind,below,left; 4.80 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      }
+    },
+    "gt": [
+      "Transcription: Cinema is a communal experience. | Location: below,front,left; 2.64 m"
+    ],
+    "ours": [
+      "Transcription: Cinema is a communal experience. | Location: below,front,left; 2.55 m"
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 4.22,
+      "peak": 0.90381,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/stl-1spk-03895.wav"
+  },
+  {
+    "id": "stl-1spk-03467",
+    "condition": "stl/1spk",
+    "source": "stl/1spk/03467/log.txt",
+    "question": "What is everyone saying and where are they?",
+    "models": {
+      "af3": {
+        "response": "Transcription: She may even appear in some more films. | Location: N/A; 0.98 m  [text=OK, doa=X, dist=OK]",
+        "label": "WRONG"
+      },
+      "afnext": {
+        "response": "Transcription: She may even appear in more films. | Location: N/A; 0.58 m  [text=X, doa=X, dist=OK]",
+        "label": "WRONG"
+      },
+      "kimia": {
+        "response": "Transcription: She may even appear in some more films. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "midashenglm": {
+        "response": "Transcription: She may even appear in some more films. | Location: above,front,left; 2.50 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "qwen2audio": {
+        "response": "Transcription: She may even appear in some more films. | Location: above,behind,right; 4.16 m  [text=OK, doa=OK, dist=X]",
+        "label": "WRONG"
+      }
+    },
+    "gt": [
+      "Transcription: She may even appear in some more films. | Location: above,behind,right; 0.98 m"
+    ],
+    "ours": [
+      "Transcription: She may even appear in some more films. | Location: above,behind,right; 0.92 m"
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 5.36,
+      "peak": 0.97357,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/stl-1spk-03467.wav"
+  },
+  {
+    "id": "stl-2spk_nov-06405",
+    "condition": "stl/2spk_nov",
+    "source": "stl/2spk_nov/06405/log.txt",
+    "question": "Transcribe all the speakers and report their locations.",
+    "models": {
+      "af3": {
+        "response": "speaker 1: Transcription: [No transcript] [ | Location: N/A; 0.00 m  [text=X, doa=X, dist=X]\n  speaker 2: [unparsable] raw:   [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "afnext": {
+        "response": "speaker 1: Transcription: There are so many people to thank Women were mostly notable by their absence | Location: above,front,left; 0.58 m  [text=X, doa=X, dist=X]\n  speaker 2: [unparsable] raw:   [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "kimia": {
+        "response": "speaker 1: Transcription: There are so many people to thank | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=X]\n  speaker 2: Transcription: Woman were mostly notable by their absence | Location: above,front,left; 2.76 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "midashenglm": {
+        "response": "speaker 1: Transcription: There is so many people to fake. | Location: above,front,left; 2.76 m  [text=X, doa=X, dist=X]\n  speaker 2: Transcription: Woman were mostly notable by their absence. | Location: above,front,left; 2.76 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "qwen2audio": {
+        "response": "speaker 1: Transcription: There are so many people to think | Location: above,behind,right; 4.16 m  [text=X, doa=X, dist=OK]\n  speaker 2: [unparsable] raw:   [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      }
+    },
+    "gt": [
+      "Transcription: There are so many people to thank. | Location: behind,below,left; 4.57 m",
+      "Transcription: Women were mostly notable by their absence. | Location: above,behind,left; 0.91 m"
+    ],
+    "ours": [
+      "Transcription: There are so many people to thank. | Location: behind,below,left; 4.84 m",
+      "Transcription: Women were mostly notable by their absence. | Location: above,behind,left; 1.18 m"
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 10.54,
+      "peak": 1.0,
+      "clipped_fraction": 3.112697433951525e-05
+    },
+    "audio_url": "assets/speech/stl-2spk_nov-06405.wav"
+  },
+  {
+    "id": "stl-2spk_nov-06610",
+    "condition": "stl/2spk_nov",
+    "source": "stl/2spk_nov/06610/log.txt",
+    "question": "Transcribe everything you hear and tell me where each speaker is located.",
+    "models": {
+      "af3": {
+        "response": "speaker 1: Transcription: He said the winner had been chosen by consensus. | Location: N/A; 0.98 m  [text=OK, doa=X, dist=X]\n  speaker 2: Transcription: We were with him the whole time.. | Location: N/A; 0.59 m  [text=X, doa=X, dist=OK]",
+        "label": "WRONG"
+      },
+      "afnext": {
+        "response": "speaker 1: Transcription: He said the winner had been chosen by consensus. | Location: above,front,left; 0.85 m  [text=OK, doa=X, dist=X]\n  speaker 2: Transcription: We were with him the whole time. | Location: behind,below,left; 1.95 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "kimia": {
+        "response": "speaker 1: Transcription: He said the winner had been chosen by consensus. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=OK]\n  speaker 2: Transcription: We were with him the whole time. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "midashenglm": {
+        "response": "speaker 1: Transcription: He said the winner had been chosen by consensus. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=OK]\n  speaker 2: Transcription: We were with him the whole time. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "qwen2audio": {
+        "response": "speaker 1: Transcription: He said the winner had been chosen by consensus. | Location: above,behind,right; 4.16 m  [text=OK, doa=X, dist=X]\n  speaker 2: Transcription: We were with him the whole time. | Location: behind,below,left; 3.42 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      }
+    },
+    "gt": [
+      "Transcription: He said the winner had been chosen by consensus. | Location: behind,below,right; 2.67 m",
+      "Transcription: We were with him the whole time. | Location: below,front,right; 0.91 m"
+    ],
+    "ours": [
+      "Transcription: He said the winner had been chosen by consensus. | Location: behind,below,right; 2.97 m",
+      "Transcription: We were with him the whole time. | Location: below,front,right; 1.14 m"
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 11.62,
+      "peak": 0.88855,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/stl-2spk_nov-06610.wav"
+  },
+  {
+    "id": "stl-2spk_ov-03833",
+    "condition": "stl/2spk_ov",
+    "source": "stl/2spk_ov/03833/log.txt",
+    "question": "Give me a full transcript of all the speech along with each speaker's position.",
+    "models": {
+      "af3": {
+        "response": "speaker 1: Transcription: People look but no one ever finds it happening to him. | Location: N/A; 0.98 m  [text=X, doa=X, dist=OK]\n  speaker 2: [unparsable] raw:   [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "afnext": {
+        "response": "speaker 1: Transcription: People who know what happened to him find out about it too. | Location: above,front,left; 0.58 m  [text=X, doa=X, dist=OK]\n  speaker 2: Transcription: Well, it happened to me first. | Location: behind,below,right; 0.92 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "kimia": {
+        "response": "speaker 1: [unparsable] raw:   [text=X, doa=X, dist=X]\n  speaker 2: Transcription: Well, it happened to me, so it's happening to him. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "midashenglm": {
+        "response": "speaker 1: Transcription: so it's happening to him. | Location: behind,below,left; 3.42 m  [text=X, doa=X, dist=X]\n  speaker 2: Transcription: People that have no one ever finds them. | Location: above,front,left; 2.76 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "qwen2audio": {
+        "response": "speaker 1: Transcription: People live but no one ever finds it so it's happening to him. | Location: behind,below,left; 0.59 m  [text=X, doa=X, dist=OK]\n  speaker 2: Transcription: Well, it happened to me. | Location: behind,below,right; 0.85 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      }
+    },
+    "gt": [
+      "Transcription: People look, but no one ever finds it. | Location: below,front,right; 1.07 m",
+      "Transcription: Well, it happened to me, so it's happening to him. | Location: above,front,right; 1.49 m"
+    ],
+    "ours": [
+      "Transcription: People look, but no one ever finds it. | Location: below,front,right; 1.36 m",
+      "Transcription: Well, it happened to me, so it's happening to him. | Location: above,front,right; 1.46 m"
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 6.12,
+      "peak": 1.0,
+      "clipped_fraction": 0.00010219201880333146
+    },
+    "audio_url": "assets/speech/stl-2spk_ov-03833.wav"
+  },
+  {
+    "id": "stl-2spk_ov-06533",
+    "condition": "stl/2spk_ov",
+    "source": "stl/2spk_ov/06533/log.txt",
+    "question": "What is being said by each person, and where is each person positioned?",
+    "models": {
+      "af3": {
+        "response": "speaker 1: Transcription: If he saw somebody in trouble, he would try to help. | Location: N/A; 0.98 m  [text=OK, doa=X, dist=OK]\n  speaker 2: [unparsable] raw:   [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "afnext": {
+        "response": "speaker 1: Transcription: If he saw somebody in trouble, he would try to help. | Location: above,front,left; 5.08 m  [text=OK, doa=OK, dist=X]\n  speaker 2: [unparsable] raw:   [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "kimia": {
+        "response": "speaker 1: Transcription: If he saw somebody in trouble, he would try to help. | Location: above,front,left; 2.76 m  [text=OK, doa=OK, dist=X]\n  speaker 2: Transcription: They are real. | Location: above,front,left; 2.76 m  [text=OK, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "midashenglm": {
+        "response": "speaker 1: Transcription: If he saw somebody in trouble he would try to help. | Location: above,front,left; 2.56 m  [text=OK, doa=OK, dist=X]\n  speaker 2: Transcription: They are expected to appear at Edinburgh Sheriff Court today. | Location: above,front,right; 3.24 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      },
+      "qwen2audio": {
+        "response": "speaker 1: Transcription: They are revealed. | Location: behind,below,left; 5.08 m  [text=X, doa=X, dist=X]\n  speaker 2: Transcription: She has been missing for weeks. | Location: above,front,right; 3.90 m  [text=X, doa=X, dist=X]",
+        "label": "WRONG"
+      }
+    },
+    "gt": [
+      "Transcription: If he saw somebody in trouble, he would try to help. | Location: above,front,left; 0.68 m",
+      "Transcription: They are real. | Location: behind,below,right; 1.49 m"
+    ],
+    "ours": [
+      "Transcription: If he saw somebody in trouble, he would try to help. | Location: above,front,left; 0.73 m",
+      "Transcription: They are real. | Location: behind,below,right; 1.26 m"
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 4.83,
+      "peak": 0.86243,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/stl-2spk_ov-06533.wav"
+  },
+  {
+    "id": "tst-nov_doa-05598",
+    "condition": "tst/nov_doa",
+    "source": "tst/nov_doa/05598/log.txt",
+    "question": "Please transcribe what is being said by the speaker on your left.",
+    "models": {
+      "af3": {
+        "response": "harry will be up for it you can feel at home in china please",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "afnext": {
+        "response": "Harry will be up for it You can feel at home in China",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "kimia": {
+        "response": "Harry will be up for it. You can feel at home in China.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "midashenglm": {
+        "response": "Harry will be up for it. You can feel at home in China.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "qwen2audio": {
+        "response": "harry will be up for it",
+        "label": "other",
+        "exact_transcript": false
+      }
+    },
+    "gt": [
+      "You can feel at home in China."
+    ],
+    "other_speaker": "Harry will be up for it.",
+    "ours": [
+      "You can feel at home in China."
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 7.32,
+      "peak": 1.0,
+      "clipped_fraction": 1.2807650436527419e-05
+    },
+    "audio_url": "assets/speech/tst-nov_doa-05598.wav"
+  },
+  {
+    "id": "tst-nov_doa-05590",
+    "condition": "tst/nov_doa",
+    "source": "tst/nov_doa/05590/log.txt",
+    "question": "Please transcribe what is being said by the speaker on your right.",
+    "models": {
+      "af3": {
+        "response": "at westminster there was disbelief at the news you have to keep it on the fairways",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "afnext": {
+        "response": "At Westminster there was disbelief at the news You have to keep it on the fairways",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "kimia": {
+        "response": "At Westminster there was disbelief at the news. You have to keep it on the fairways.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "midashenglm": {
+        "response": "At Westminster, there was disbelief at the news. You have to keep it on the fairways.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "qwen2audio": {
+        "response": "at westminster there was disbelief at the news you have to keep it on the fairways",
+        "label": "mixed",
+        "exact_transcript": false
+      }
+    },
+    "gt": [
+      "At Westminster, there was disbelief at the news."
+    ],
+    "other_speaker": "You have to keep it on the fairways.",
+    "ours": [
+      "At Westminster, there was disbelief at the news."
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 7.29,
+      "peak": 0.7106,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/tst-nov_doa-05590.wav"
+  },
+  {
+    "id": "tst-nov_dis-05095",
+    "condition": "tst/nov_dis",
+    "source": "tst/nov_dis/05095/log.txt",
+    "question": "Please write down the words spoken by the closer speaker.",
+    "models": {
+      "af3": {
+        "response": "and we have singer it is terrible loss",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "afnext": {
+        "response": "It is a terrible loss.",
+        "label": "other",
+        "exact_transcript": false
+      },
+      "kimia": {
+        "response": "And we have a singer. It is a terrible loss.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "midashenglm": {
+        "response": "And we have a singer. It is a terrible loss.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "qwen2audio": {
+        "response": "it is a terrible loss",
+        "label": "other",
+        "exact_transcript": false
+      }
+    },
+    "gt": [
+      "And we have a singer."
+    ],
+    "other_speaker": "It is a terrible loss.",
+    "ours": [
+      "And we have a singer."
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 6.78,
+      "peak": 0.8399,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/tst-nov_dis-05095.wav"
+  },
+  {
+    "id": "tst-nov_dis-00789",
+    "condition": "tst/nov_dis",
+    "source": "tst/nov_dis/00789/log.txt",
+    "question": "Please transcribe the voice coming from the farther person.",
+    "models": {
+      "af3": {
+        "response": "treatment is not an issue with these people anything is possible in football and we can beat celtic again",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "afnext": {
+        "response": "Anything is possible in football and we can beat Celtic again.",
+        "label": "other",
+        "exact_transcript": false
+      },
+      "kimia": {
+        "response": "Treatment is not an issue with these people. Anything is possible in football, and we can beat celtic again.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "midashenglm": {
+        "response": "Treatment is not an issue with these people. Anything is possible in football and we can beat Celtic again.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "qwen2audio": {
+        "response": "Anything is possible in football and we can beat Celtic again.",
+        "label": "other",
+        "exact_transcript": false
+      }
+    },
+    "gt": [
+      "Treatment is not an issue with these people."
+    ],
+    "other_speaker": "Anything is possible in football and we can beat Celtic again.",
+    "ours": [
+      "Treatment is not an issue with these people."
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 8.83,
+      "peak": 0.78021,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/tst-nov_dis-00789.wav"
+  },
+  {
+    "id": "tst-ov_doa-00493",
+    "condition": "tst/ov_doa",
+    "source": "tst/ov_doa/00493/log.txt",
+    "question": "Please transcribe what is being said by the speaker on your right.",
+    "models": {
+      "af3": {
+        "response": "frankly we should not all have such problems to establish the scale of the scandal please transcribe what is being said by the speaker on your right directly output the transcription without any explanation",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "afnext": {
+        "response": "Frankly we should all have such problems.",
+        "label": "target",
+        "exact_transcript": true
+      },
+      "kimia": {
+        "response": "Frankly, we should all have such problems.",
+        "label": "target",
+        "exact_transcript": true
+      },
+      "midashenglm": {
+        "response": "Frankly, we should all have such problems. It's important to establish the scale of the scandal.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "qwen2audio": {
+        "response": "frankly we should all have such problems establish the scale of the scandal.",
+        "label": "mixed",
+        "exact_transcript": false
+      }
+    },
+    "gt": [
+      "Frankly, we should all have such problems."
+    ],
+    "other_speaker": "He met Mr Davies to establish the scale of the scandal.",
+    "ours": [
+      "Frankly, we should all have such problems."
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 7.05,
+      "peak": 1.0,
+      "clipped_fraction": 7.977591830945966e-05
+    },
+    "audio_url": "assets/speech/tst-ov_doa-00493.wav"
+  },
+  {
+    "id": "tst-ov_doa-06857",
+    "condition": "tst/ov_doa",
+    "source": "tst/ov_doa/06857/log.txt",
+    "question": "Transcribe the audio from the speaker on your left.",
+    "models": {
+      "af3": {
+        "response": "the dictator of iraq is not disarming",
+        "label": "target",
+        "exact_transcript": true
+      },
+      "afnext": {
+        "response": "He was good but not disarming",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "kimia": {
+        "response": "The dictator of iraq is not disarming.",
+        "label": "target",
+        "exact_transcript": true
+      },
+      "midashenglm": {
+        "response": "He was good, but not disarming.",
+        "label": "mixed",
+        "exact_transcript": false
+      },
+      "qwen2audio": {
+        "response": "The transcript is: 'the dictator of Iraq is not disarming.'",
+        "label": "target",
+        "exact_transcript": false
+      }
+    },
+    "gt": [
+      "The dictator of Iraq is not disarming."
+    ],
+    "other_speaker": "He was good, but not that good.",
+    "ours": [
+      "The dictator of Iraq is not disarming."
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 4.41,
+      "peak": 0.63638,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/tst-ov_doa-06857.wav"
+  },
+  {
+    "id": "tst-ov_dis-01456",
+    "condition": "tst/ov_dis",
+    "source": "tst/ov_dis/01456/log.txt",
+    "question": "Transcribe the words spoken by the person at a farther distance.",
+    "models": {
+      "af3": {
+        "response": "i was forced to divorce",
+        "label": "other",
+        "exact_transcript": false
+      },
+      "afnext": {
+        "response": "I came up through the vents.",
+        "label": "target",
+        "exact_transcript": false
+      },
+      "kimia": {
+        "response": "I came up through the ranks.",
+        "label": "target",
+        "exact_transcript": true
+      },
+      "midashenglm": {
+        "response": "I came from a diverse background.",
+        "label": "garbage",
+        "exact_transcript": false
+      },
+      "qwen2audio": {
+        "response": "I came up through the ranks.",
+        "label": "target",
+        "exact_transcript": true
+      }
+    },
+    "gt": [
+      "I came up through the ranks."
+    ],
+    "other_speaker": "It was forced to divert.",
+    "ours": [
+      "I came up through the ranks."
+    ],
+    "audio": {
+      "channels": 2,
+      "sample_rate": 32000,
+      "duration": 4.79,
+      "peak": 0.90399,
+      "clipped_fraction": 0.0
+    },
+    "audio_url": "assets/speech/tst-ov_dis-01456.wav"
+  }
+]

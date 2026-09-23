@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Scene illustration pending</title><desc id="desc">A neutral placeholder while the selected audio scenario is under review.</desc>
+  <rect width="1536" height="1024" fill="#eef1e9"/><rect x="70" y="70" width="1396" height="884" rx="12" fill="#f8faf5" stroke="#d5ddce" stroke-width="3"/>
+  <text x="768" y="493" text-anchor="middle" fill="#65705f" font-family="Arial, sans-serif" font-size="30">Scene illustration pending curation</text>
+  <text x="768" y="540" text-anchor="middle" fill="#899385" font-family="Arial, sans-serif" font-size="20">Listen to the binaural audio and review the question examples.</text>
+</svg>
