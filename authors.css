@@ -19,6 +19,13 @@
   margin: 0 .35em;
 }
 
+.hero-authors .hero-author {
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+}
+
 .hero-affiliation {
   margin: 5px 0 0;
   color: #fff;
