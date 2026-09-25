@@ -34,6 +34,18 @@
   letter-spacing: .02em;
 }
 
+/* The updated architecture is deliberately flatter; keep its visual weight modest. */
+#model .model {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  padding: 14px 0;
+}
+
+#model .model img {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 700px) {
   .hero-credit { margin-top: 24px; padding-top: 18px; }
   .hero-authors { font-size: 16px; }
