@@ -52,6 +52,8 @@ body{overflow-x:clip}
 .scene-carousel-card.demo-card{margin-top:18px}
 @media(max-width:700px){.scene-condition-tabs{display:flex;flex-wrap:wrap;margin-bottom:8px}.scene-carousel-controls{position:static;justify-content:flex-end;margin:0 0 6px}}
 
+.question-target{color:#941d25;font-weight:700}
+
 /* Keep the image, QA and output aligned when a question has longer text. */
 .question-pages,.scene-model-output-pages{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;width:100%}
 .question-page,.scene-model-output-page{grid-area:1/1;min-width:0;visibility:hidden;pointer-events:none}

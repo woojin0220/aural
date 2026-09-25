@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aural Towards Spoken-Content-Aware Spatial Auditory Understanding with Large Audio Language Models</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c3447'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-size='43' fill='white'%3EA%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="research.css?v=d7b31050c903"><link rel="stylesheet" href="authors.css?v=5"><link rel="stylesheet" href="speech-demos.css?v=100dffd298be"><link rel="stylesheet" href="demo-layout.css?v=13bd96e30b5e"><link rel="stylesheet" href="question-switcher.css?v=a3a69877c05c"><script src="speech-carousel.js?v=c31ef061bdd3" defer></script><script src="scene-output-sync.js?v=82e63fe8a857" defer></script><link rel="stylesheet" href="chart-interaction.css?v=bc16463bec52"><script src="lossless-audio-loader.js?v=5fc3c02e28c1" defer></script></head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aural Towards Spoken-Content-Aware Spatial Auditory Understanding with Large Audio Language Models</title><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c3447'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial' font-size='43' fill='white'%3EA%3C/text%3E%3C/svg%3E"><link rel="stylesheet" href="research.css?v=d7b31050c903"><link rel="stylesheet" href="authors.css?v=5"><link rel="stylesheet" href="speech-demos.css?v=100dffd298be"><link rel="stylesheet" href="demo-layout.css?v=c9b22159301b"><link rel="stylesheet" href="question-switcher.css?v=a3a69877c05c"><script src="speech-carousel.js?v=c31ef061bdd3" defer></script><script src="scene-output-sync.js?v=82e63fe8a857" defer></script><link rel="stylesheet" href="chart-interaction.css?v=bc16463bec52"><script src="lossless-audio-loader.js?v=5fc3c02e28c1" defer></script></head>
 <body><header><a href="#top">Aural</a><nav><a href="#abstract">Abstract</a><a href="#model">Model</a><a href="#performance">Performance</a><div class="demo-menu"><a class="demo-menu-trigger" href="#demos" aria-haspopup="true">Demos</a><div class="demo-menu-popup"><a href="#speech-demos">AuralSpeech</a><a href="#demos">AuralScene</a></div></div></nav></header>
 <main id="top"><section class="hero"><h1><span class="hero-name">Aural</span> <span class="hero-title">Towards Spoken-Content-Aware Spatial Auditory Understanding with Large Audio Language Models</span></h1><div class="hero-credit"><p class="hero-authors"><span class="hero-author">Han Yin</span> <span aria-hidden="true">·</span> <span class="hero-author">Hongju Jeong</span> <span aria-hidden="true">·</span> <span class="hero-author">Woojin Hong</span> <span aria-hidden="true">·</span> <span class="hero-author">Jung-Woo Choi</span></p><p class="hero-affiliation">KAIST</p></div></section>
 <section id="abstract" class="prose"><h2>Abstract</h2><p>Large audio language models (LALMs) have advanced from recognizing <em>what is present</em> to understanding <em>where sources are</em>. Existing spatial LALMs can model both spoken content and general sound sources, however, these capabilities are largely treated as separate tasks, without explicitly connecting spoken content to spatially grounded sound events. This task separation limits joint understanding of speech and the surrounding auditory scene, where spoken content can be crucial for interpreting the situation. For example, a crash followed by speech may indicate very different situations depending on whether a speaker calls for help or comments on a dropped plate. To address this gap, we first curate <strong>AuralSpeech</strong>, a corpus for spatially localizing and transcribing speakers. We then introduce <strong>AuralScene</strong>, a multiple-choice question-answering dataset for spoken-content understanding, spatial grounding, and relational reasoning. Unlike existing datasets that primarily study these capabilities in isolation, AuralScene explicitly couples spoken content with spatially grounded sound events to support joint scene-level reasoning. To enable its systematic construction, we propose <strong>Spatial Auditory Graph (SAG)</strong>, a structured representation of spatial auditory scenes that enables the generation of diverse and controllable spatial audio scenes and question-answer pairs. Finally, we develop <strong>AuralListener</strong>, a baseline spatial LALM for the proposed tasks that combines monaural and spatial audio token streams, enabling controlled analysis of their complementary roles in spatial auditory understanding. Through comprehensive evaluations, we analyze how spoken content, monaural and spatial audio representations contribute to understanding, and identify remaining challenges in the proposed tasks, providing a step toward spoken-content-aware spatial audio understanding.</p></section>
@@ -6460,22 +6460,22 @@ z
 <input class="question-radio" type="radio" name="scene-3576-SNP-without_SCU" id="scene-3576-SNP-without_SCU-3" ><label class="question-tab" for="scene-3576-SNP-without_SCU-3" title="Question 4">4</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Direction</h3>
-<p class="question">Where is the doorbell coming from?</p>
+<p class="question">Where is the <span class="question-target">doorbell</span> coming from?</p>
 <ol class="choices" type="A"><li>Left, behind, and above.</li><li>Left, front, and below.</li><li>Right, behind, and below.</li><li>Right, front, and above.</li></ol>
 <p class="answer"><strong>Answer:</strong> Right, front, and above.</p>
 </div>
 <div class="qa question-page page-1"><h3>Distance</h3>
-<p class="question">How many meters away is the doorbell from you?</p>
+<p class="question">How many meters away is the <span class="question-target">doorbell</span> from you?</p>
 <ol class="choices" type="A"><li>About 1.6 meters away.</li><li>About 0.4 meters away.</li><li>About 3.3 meters away.</li><li>About 0.6 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 1.6 meters away.</p>
 </div>
 <div class="qa question-page page-2"><h3>Timing / duration</h3>
-<p class="question">What is the duration of the doorbell?</p>
+<p class="question">What is the duration of the <span class="question-target">doorbell</span>?</p>
 <ol class="choices" type="A"><li>2.2 s</li><li>7.2 s</li><li>0.9 s</li><li>0.6 s</li></ol>
 <p class="answer"><strong>Answer:</strong> 2.2 s</p>
 </div>
 <div class="qa question-page page-3"><h3>Trajectory / direction</h3>
-<p class="question">What is the direction of motion of the dog?</p>
+<p class="question">What is the direction of motion of the <span class="question-target">dog</span>?</p>
 <ol class="choices" type="A"><li>To the right.</li><li>To the behind.</li><li>To the down.</li><li>To the front.</li></ol>
 <p class="answer"><strong>Answer:</strong> To the behind.</p>
 </div>
@@ -6486,17 +6486,17 @@ z
 <input class="question-radio" type="radio" name="scene-1816-SNP-without_SCU" id="scene-1816-SNP-without_SCU-2" ><label class="question-tab" for="scene-1816-SNP-without_SCU-2" title="Question 3">3</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Timing / offset</h3>
-<p class="question">At what time does the cat stop?</p>
+<p class="question">At what time does the <span class="question-target">cat</span> stop?</p>
 <ol class="choices" type="A"><li>20 s</li><li>10 s</li><li>15 s</li><li>21 s</li></ol>
 <p class="answer"><strong>Answer:</strong> 20 s</p>
 </div>
 <div class="qa question-page page-1"><h3>Timing / onset</h3>
-<p class="question">What is the onset time of the cat?</p>
+<p class="question">What is the onset time of the <span class="question-target">cat</span>?</p>
 <ol class="choices" type="A"><li>0 s</li><li>6.4 s</li><li>15 s</li><li>16 s</li></ol>
 <p class="answer"><strong>Answer:</strong> 16 s</p>
 </div>
 <div class="qa question-page page-2"><h3>Trajectory / speed</h3>
-<p class="question">What is the movement speed of the cat?</p>
+<p class="question">What is the movement speed of the <span class="question-target">cat</span>?</p>
 <ol class="choices" type="A"><li>0.2 m/s</li><li>0.4 m/s</li><li>5.5 m/s</li><li>0.5 m/s</li></ol>
 <p class="answer"><strong>Answer:</strong> 0.5 m/s</p>
 </div>
@@ -6512,27 +6512,27 @@ z
 <input class="question-radio" type="radio" name="scene-3607-SNP-with_SCU" id="scene-3607-SNP-with_SCU-4" ><label class="question-tab" for="scene-3607-SNP-with_SCU-4" title="Question 5">5</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Direction</h3>
-<p class="question">What is the direction of the speech asking whether Rex is running around again and describing Rex as restless relative to the listener?</p>
+<p class="question">What is the direction of <span class="question-target">the speech asking whether Rex is running around again and describing Rex as restless</span> relative to the listener?</p>
 <ol class="choices" type="A"><li>Right, behind, and above.</li><li>Right, front, and below.</li><li>Left, behind, and below.</li><li>Left, front, and above.</li></ol>
 <p class="answer"><strong>Answer:</strong> Left, front, and above.</p>
 </div>
 <div class="qa question-page page-1"><h3>Distance</h3>
-<p class="question">How many meters away is the speech attributing the restless behavior to playing a guitar record from you?</p>
+<p class="question">How many meters away is <span class="question-target">the speech attributing the restless behavior to playing a guitar record</span> from you?</p>
 <ol class="choices" type="A"><li>About 3.4 meters away.</li><li>About 1.0 meters away.</li><li>About 1.7 meters away.</li><li>About 3.7 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 1.7 meters away.</p>
 </div>
 <div class="qa question-page page-2"><h3>Timing / duration</h3>
-<p class="question">For how long is the speech asking whether Rex is running around again and describing Rex as restless audible?</p>
+<p class="question">For how long is <span class="question-target">the speech asking whether Rex is running around again and describing Rex as restless</span> audible?</p>
 <ol class="choices" type="A"><li>3.8 s</li><li>2.8 s</li><li>4.7 s</li><li>0.9 s</li></ol>
 <p class="answer"><strong>Answer:</strong> 3.8 s</p>
 </div>
 <div class="qa question-page page-3"><h3>Timing / offset</h3>
-<p class="question">At what time does the speech asking whether Rex is running around again and describing Rex as restless stop?</p>
+<p class="question">At what time does <span class="question-target">the speech asking whether Rex is running around again and describing Rex as restless</span> stop?</p>
 <ol class="choices" type="A"><li>2.9 s</li><li>4.8 s</li><li>1.8 s</li><li>2.8 s</li></ol>
 <p class="answer"><strong>Answer:</strong> 4.8 s</p>
 </div>
 <div class="qa question-page page-4"><h3>Timing / onset</h3>
-<p class="question">At what time does the speech attributing the restless behavior to playing a guitar record start?</p>
+<p class="question">At what time does <span class="question-target">the speech attributing the restless behavior to playing a guitar record</span> start?</p>
 <ol class="choices" type="A"><li>3 s</li><li>3.6 s</li><li>2.7 s</li><li>6 s</li></ol>
 <p class="answer"><strong>Answer:</strong> 6 s</p>
 </div>
@@ -6552,17 +6552,17 @@ z
 <input class="question-radio" type="radio" name="scene-1065-SRR-without_SCU" id="scene-1065-SRR-without_SCU-2" ><label class="question-tab" for="scene-1065-SRR-without_SCU-2" title="Question 3">3</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Temporal</h3>
-<p class="question">How is the water tap ordered in time relative to the folk music?</p>
+<p class="question">How is the <span class="question-target">water tap</span> ordered in time relative to the <span class="question-target">folk music</span>?</p>
 <ol class="choices" type="A"><li>Before.</li><li>Overlap.</li><li>After.</li></ol>
 <p class="answer"><strong>Answer:</strong> Overlap.</p>
 </div>
 <div class="qa question-page page-1"><h3>Spatial / direction</h3>
-<p class="question">In which direction is the printer relative to the folk music?</p>
+<p class="question">In which direction is the <span class="question-target">printer</span> relative to the <span class="question-target">folk music</span>?</p>
 <ol class="choices" type="A"><li>Right, front, and below.</li><li>Left, behind, and below.</li><li>Left, front, and above.</li><li>Right, behind, and above.</li></ol>
 <p class="answer"><strong>Answer:</strong> Right, front, and below.</p>
 </div>
 <div class="qa question-page page-2"><h3>Spatial / distance</h3>
-<p class="question">What is the distance between the printer and the water tap?</p>
+<p class="question">What is the distance between the <span class="question-target">printer</span> and the <span class="question-target">water tap</span>?</p>
 <ol class="choices" type="A"><li>About 9.1 meters away.</li><li>About 1.6 meters away.</li><li>About 2.3 meters away.</li><li>About 4.6 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 4.6 meters away.</p>
 </div>
@@ -6571,7 +6571,7 @@ z
 <input class="question-radio" type="radio" name="scene-3568-SRR-without_SCU" id="scene-3568-SRR-without_SCU-0" checked ><label class="question-tab" for="scene-3568-SRR-without_SCU-0" title="Question 1">1</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Causal</h3>
-<p class="question">What brings about the walk?</p>
+<p class="question">What brings about the <span class="question-target">walk</span>?</p>
 <ol class="choices" type="A"><li>A person knocks on a door.</li><li>A door opens.</li><li>A doorbell rings.</li><li>A phone rings.</li></ol>
 <p class="answer"><strong>Answer:</strong> A doorbell rings.</p>
 </div>
@@ -6586,17 +6586,17 @@ z
 <input class="question-radio" type="radio" name="scene-2864-SRR-with_SCU" id="scene-2864-SRR-with_SCU-2" ><label class="question-tab" for="scene-2864-SRR-with_SCU-2" title="Question 3">3</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Causal</h3>
-<p class="question">What is the reason for the speech asking about a possible animal reaction?</p>
+<p class="question">What is the reason for <span class="question-target">the speech asking about a possible animal reaction</span>?</p>
 <ol class="choices" type="A"><li>A door closes, and a vehicle passes nearby.</li><li>A dog barks, and a person walks nearby.</li><li>A person says the music suits sitting outdoors with crickets.</li><li>A bird sings.</li></ol>
 <p class="answer"><strong>Answer:</strong> A dog barks, and a person walks nearby.</p>
 </div>
 <div class="qa question-page page-1"><h3>Spatial / direction</h3>
-<p class="question">What is the direction of the speech asking whether a dog reacted to approaching footsteps with respect to the guitar?</p>
+<p class="question">What is the direction of <span class="question-target">the speech asking whether a dog reacted to approaching footsteps</span> with respect to the <span class="question-target">guitar</span>?</p>
 <ol class="choices" type="A"><li>Right, behind, and above.</li><li>Right, front, and below.</li><li>Left, behind, and below.</li><li>Left, front, and above.</li></ol>
 <p class="answer"><strong>Answer:</strong> Left, front, and above.</p>
 </div>
 <div class="qa question-page page-2"><h3>Temporal</h3>
-<p class="question">In time, how does the guitar relate to the speech agreeing that the guitar suits an outdoor evening?</p>
+<p class="question">In time, how does the <span class="question-target">guitar</span> relate to <span class="question-target">the speech agreeing that the guitar suits an outdoor evening</span>?</p>
 <ol class="choices" type="A"><li>Before.</li><li>After.</li><li>Overlap.</li></ol>
 <p class="answer"><strong>Answer:</strong> Overlap.</p>
 </div>
@@ -6605,7 +6605,7 @@ z
 <input class="question-radio" type="radio" name="scene-2631-SRR-with_SCU" id="scene-2631-SRR-with_SCU-0" checked ><label class="question-tab" for="scene-2631-SRR-with_SCU-0" title="Question 1">1</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Spatial / distance</h3>
-<p class="question">How many meters separate the speech saying the cello passage improved after rehearsal and the cello?</p>
+<p class="question">How many meters separate <span class="question-target">the speech saying the cello passage improved after rehearsal</span> and the cello?</p>
 <ol class="choices" type="A"><li>About 1.4 meters away.</li><li>About 0.6 meters away.</li><li>About 0.7 meters away.</li><li>About 0.4 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 1.4 meters away.</p>
 </div>
@@ -6623,7 +6623,7 @@ z
 <input class="question-radio" type="radio" name="scene-1444-MRR-without_SCU" id="scene-1444-MRR-without_SCU-0" checked ><label class="question-tab" for="scene-1444-MRR-without_SCU-0" title="Question 1">1</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Temporal spatial distance</h3>
-<p class="question">The sound event happens right after the dog; approximately how far is it from the ukulele?</p>
+<p class="question">The sound event happens right after <span class="question-target">the dog</span>; approximately how far is it from the <span class="question-target">ukulele</span>?</p>
 <ol class="choices" type="A"><li>About 3.6 meters away.</li><li>About 1.6 meters away.</li><li>About 0.4 meters away.</li><li>About 2.0 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 1.6 meters away.</p>
 </div>
@@ -6633,12 +6633,12 @@ z
 <input class="question-radio" type="radio" name="scene-2379-MRR-without_SCU" id="scene-2379-MRR-without_SCU-1" ><label class="question-tab" for="scene-2379-MRR-without_SCU-1" title="Question 2">2</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Temporal spatial direction</h3>
-<p class="question">The sound event happens right before the coin (dropping); on which side of the folk music is it?</p>
+<p class="question"><span class="question-target">The sound event</span> happens right before the <span class="question-target">coin (dropping)</span>; on which side of the <span class="question-target">folk music</span> is it?</p>
 <ol class="choices" type="A"><li>Left, behind, and above.</li><li>Left, front, and below.</li><li>Right, front, and above.</li><li>Right, behind, and below.</li></ol>
 <p class="answer"><strong>Answer:</strong> Right, behind, and below.</p>
 </div>
 <div class="qa question-page page-1"><h3>Temporal spatial distance</h3>
-<p class="question">The sound event happens right before the coin (dropping); approximately how far is it from the folk music?</p>
+<p class="question"><span class="question-target">The sound event</span> happens right before the <span class="question-target">coin (dropping)</span>; approximately how far is it from the <span class="question-target">folk music</span>?</p>
 <ol class="choices" type="A"><li>About 5.8 meters away.</li><li>About 8.9 meters away.</li><li>About 4.9 meters away.</li><li>About 3.9 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 3.9 meters away.</p>
 </div>
@@ -6649,17 +6649,17 @@ z
 <input class="question-radio" type="radio" name="scene-5424-MRR-without_SCU" id="scene-5424-MRR-without_SCU-2" ><label class="question-tab" for="scene-5424-MRR-without_SCU-2" title="Question 3">3</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Causal spatial direction</h3>
-<p class="question">Relative to the air conditioning, in which direction is the sound that triggers the walk footsteps?</p>
+<p class="question">Relative to the <span class="question-target">air conditioning</span>, in which direction is <span class="question-target">the sound that triggers the walk footsteps</span>?</p>
 <ol class="choices" type="A"><li>Right, behind, and above.</li><li>Left, front, and above.</li><li>Right, front, and below.</li><li>Left, behind, and below.</li></ol>
 <p class="answer"><strong>Answer:</strong> Left, front, and above.</p>
 </div>
 <div class="qa question-page page-1"><h3>Causal spatial distance</h3>
-<p class="question">How far away is the sound that triggers the walk footsteps from the air conditioning?</p>
+<p class="question">How far away is <span class="question-target">the sound that triggers the walk footsteps</span> from the <span class="question-target">air conditioning</span>?</p>
 <ol class="choices" type="A"><li>About 3.1 meters away.</li><li>About 4.2 meters away.</li><li>About 2.1 meters away.</li><li>About 12.5 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 4.2 meters away.</p>
 </div>
 <div class="qa question-page page-2"><h3>Causal temporal</h3>
-<p class="question">In time, how does the sound that triggers the walk footsteps relate to the air conditioning?</p>
+<p class="question">In time, how does <span class="question-target">the sound that triggers the walk footsteps</span> relate to the <span class="question-target">air conditioning</span>?</p>
 <ol class="choices" type="A"><li>Overlap.</li><li>After.</li><li>Before.</li></ol>
 <p class="answer"><strong>Answer:</strong> Overlap.</p>
 </div>
@@ -6672,7 +6672,7 @@ z
 <input class="question-radio" type="radio" name="scene-2454-MRR-with_SCU" id="scene-2454-MRR-with_SCU-0" checked ><label class="question-tab" for="scene-2454-MRR-with_SCU-0" title="Question 1">1</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Causal temporal</h3>
-<p class="question">In terms of timing, does the sound that triggers the dog come before, after, or overlap with the apologetic speech explaining an accidental quarter drop?</p>
+<p class="question">In terms of timing, does <span class="question-target">the sound that triggers the dog</span> come before, after, or overlap with <span class="question-target">the apologetic speech explaining an accidental quarter drop</span>?</p>
 <ol class="choices" type="A"><li>After.</li><li>Before.</li><li>Overlap.</li></ol>
 <p class="answer"><strong>Answer:</strong> Before.</p>
 </div>
@@ -6681,7 +6681,7 @@ z
 <input class="question-radio" type="radio" name="scene-6914-MRR-with_SCU" id="scene-6914-MRR-with_SCU-0" checked ><label class="question-tab" for="scene-6914-MRR-with_SCU-0" title="Question 1">1</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Temporal spatial direction</h3>
-<p class="question">The sound event happens right after the speech asking whether something happened and proposing a cause; on which side of the dog is it?</p>
+<p class="question"><span class="question-target">The sound event</span> happens right after <span class="question-target">the speech asking whether something happened and proposing a cause</span>; on which side of the <span class="question-target">dog</span> is it?</p>
 <ol class="choices" type="A"><li>Left, front, and below.</li><li>Right, behind, and below.</li><li>Right, front, and above.</li><li>Left, behind, and above.</li></ol>
 <p class="answer"><strong>Answer:</strong> Left, front, and below.</p>
 </div>
@@ -6690,7 +6690,7 @@ z
 <input class="question-radio" type="radio" name="scene-207-MRR-with_SCU" id="scene-207-MRR-with_SCU-0" checked ><label class="question-tab" for="scene-207-MRR-with_SCU-0" title="Question 1">1</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Temporal spatial distance</h3>
-<p class="question">The sound event happens right before the walk; how far away is it from the speech admitting responsibility and asking about the surroundings?</p>
+<p class="question"><span class="question-target">The sound event</span> happens right before <span class="question-target">the walk</span>; how far away is it from <span class="question-target">the speech admitting responsibility and asking about the surroundings</span>?</p>
 <ol class="choices" type="A"><li>About 2.1 meters away.</li><li>About 1.6 meters away.</li><li>About 3.1 meters away.</li><li>About 1.3 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 2.1 meters away.</p>
 </div>
@@ -6700,12 +6700,12 @@ z
 <input class="question-radio" type="radio" name="scene-1444-MRR-with_SCU" id="scene-1444-MRR-with_SCU-1" ><label class="question-tab" for="scene-1444-MRR-with_SCU-1" title="Question 2">2</label>
 <div class="question-pages">
 <div class="qa question-page page-0"><h3>Causal spatial direction</h3>
-<p class="question">Relative to the laughter, in which direction is the sound event that prompts the speech combining evening praise with an invitation to listen?</p>
+<p class="question">Relative to <span class="question-target">the laughter</span>, in which direction is <span class="question-target">the sound event that prompts the speech combining evening praise with an invitation to listen</span>?</p>
 <ol class="choices" type="A"><li>Left, behind, and below.</li><li>Left, front, and above.</li><li>Right, behind, and above.</li><li>Right, front, and below.</li></ol>
 <p class="answer"><strong>Answer:</strong> Right, front, and below.</p>
 </div>
 <div class="qa question-page page-1"><h3>Causal spatial distance</h3>
-<p class="question">How many meters separate the sound event that prompts the speech combining evening praise with an invitation to listen and the speech agreeing enthusiastically and expressing a wish to linger through the night?</p>
+<p class="question">How many meters separate <span class="question-target">the sound event that prompts the speech combining evening praise with an invitation to listen</span> and <span class="question-target">the speech agreeing enthusiastically and expressing a wish to linger through the night</span>?</p>
 <ol class="choices" type="A"><li>About 0.5 meters away.</li><li>About 1.9 meters away.</li><li>About 1.5 meters away.</li><li>About 0.4 meters away.</li></ol>
 <p class="answer"><strong>Answer:</strong> About 1.5 meters away.</p>
 </div>
