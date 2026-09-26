@@ -1,80 +1,5 @@
 [
   {
-    "scene_id": 3576,
-    "task": "SNP",
-    "knowledge": "without_SCU, direction, direction",
-    "question": "Where is the doorbell coming from?",
-    "options": {
-      "A": "Left, behind, and above.",
-      "B": "Left, front, and below.",
-      "C": "Right, behind, and below.",
-      "D": "Right, front, and above."
-    },
-    "answer": "D",
-    "illustration": "assets/scene-3576-speech-tts.png",
-    "audio": "assets/scene-3576.flac",
-    "speech": [
-      {
-        "text": "Someone's at the door, that doorbell just rang off to the front-left of us.",
-        "onset": 3.5,
-        "offset": 8.84
-      }
-    ],
-    "provenance": "original validation QA",
-    "human_reviewed": true,
-    "scene_description": "In a living room during a thunderstorm, one woman comments on the doorbell while a dog trots across the room."
-  },
-  {
-    "scene_id": 3576,
-    "task": "SNP",
-    "knowledge": "without_SCU, distance, distance",
-    "question": "How many meters away is the doorbell from you?",
-    "options": {
-      "A": "About 1.6 meters away.",
-      "B": "About 0.4 meters away.",
-      "C": "About 3.3 meters away.",
-      "D": "About 0.6 meters away."
-    },
-    "answer": "A",
-    "illustration": "assets/scene-3576-speech-tts.png",
-    "audio": "assets/scene-3576.flac",
-    "speech": [
-      {
-        "text": "Someone's at the door, that doorbell just rang off to the front-left of us.",
-        "onset": 3.5,
-        "offset": 8.84
-      }
-    ],
-    "provenance": "original validation QA",
-    "human_reviewed": true,
-    "scene_description": "In a living room during a thunderstorm, one woman comments on the doorbell while a dog trots across the room."
-  },
-  {
-    "scene_id": 3576,
-    "task": "SNP",
-    "knowledge": "without_SCU, timing, duration",
-    "question": "What is the duration of the doorbell?",
-    "options": {
-      "A": "2.2 s",
-      "B": "7.2 s",
-      "C": "0.9 s",
-      "D": "0.6 s"
-    },
-    "answer": "A",
-    "illustration": "assets/scene-3576-speech-tts.png",
-    "audio": "assets/scene-3576.flac",
-    "speech": [
-      {
-        "text": "Someone's at the door, that doorbell just rang off to the front-left of us.",
-        "onset": 3.5,
-        "offset": 8.84
-      }
-    ],
-    "provenance": "original validation QA",
-    "human_reviewed": true,
-    "scene_description": "In a living room during a thunderstorm, one woman comments on the doorbell while a dog trots across the room."
-  },
-  {
     "scene_id": 1816,
     "task": "SNP",
     "knowledge": "without_SCU, timing, offset",
@@ -133,31 +58,6 @@
     "provenance": "original validation QA",
     "human_reviewed": true,
     "scene_description": "In a spa room, one woman speaks twice as a cat passes by and another woman uses a hair dryer in the background."
-  },
-  {
-    "scene_id": 3576,
-    "task": "SNP",
-    "knowledge": "without_SCU, trajectory, direction",
-    "question": "What is the direction of motion of the dog?",
-    "options": {
-      "A": "To the right.",
-      "B": "To the behind.",
-      "C": "To the down.",
-      "D": "To the front."
-    },
-    "answer": "B",
-    "illustration": "assets/scene-3576-speech-tts.png",
-    "audio": "assets/scene-3576.flac",
-    "speech": [
-      {
-        "text": "Someone's at the door, that doorbell just rang off to the front-left of us.",
-        "onset": 3.5,
-        "offset": 8.84
-      }
-    ],
-    "provenance": "original validation QA",
-    "human_reviewed": true,
-    "scene_description": "In a living room during a thunderstorm, one woman comments on the doorbell while a dog trots across the room."
   },
   {
     "scene_id": 1816,
@@ -665,6 +565,126 @@
     "provenance": "original validation QA",
     "human_reviewed": true,
     "scene_description": "In a cozy kitchen, one person comments on a running faucet and a printer and quietly humming along to folk music, as a keychain jangles by and someone walks past."
+  },
+  {
+    "scene_id": 1816,
+    "task": "SNP",
+    "knowledge": "without_SCU, direction, direction",
+    "question": "From what direction do you hear the hair dryer?",
+    "options": {
+      "A": "Above, right, and behind.",
+      "B": "Front, above, and left.",
+      "C": "Left, behind, and below.",
+      "D": "Right, front, and below."
+    },
+    "answer": "A",
+    "illustration": "assets/scene-1816-speech-tts.png",
+    "audio": "assets/scene-1816.flac",
+    "speech": [
+      {
+        "text": "This place is so peaceful, the ocean sounds and this music really help me unwind.",
+        "onset": 2.0,
+        "offset": 7.54
+      },
+      {
+        "text": "Oh, look, there's a little cat wandering by on our left, how cute.",
+        "onset": 17.5,
+        "offset": 21.76
+      }
+    ],
+    "provenance": "original evaluation QA with model inference logs",
+    "human_reviewed": true,
+    "scene_description": "In a spa room, one woman speaks twice as a cat passes by and another woman uses a hair dryer in the background."
+  },
+  {
+    "scene_id": 1816,
+    "task": "SNP",
+    "knowledge": "without_SCU, trajectory, direction",
+    "question": "Toward which side is the cat moving?",
+    "options": {
+      "A": "To the right.",
+      "B": "To the left.",
+      "C": "To the back.",
+      "D": "To the up."
+    },
+    "answer": "A",
+    "illustration": "assets/scene-1816-speech-tts.png",
+    "audio": "assets/scene-1816.flac",
+    "speech": [
+      {
+        "text": "This place is so peaceful, the ocean sounds and this music really help me unwind.",
+        "onset": 2.0,
+        "offset": 7.54
+      },
+      {
+        "text": "Oh, look, there's a little cat wandering by on our left, how cute.",
+        "onset": 17.5,
+        "offset": 21.76
+      }
+    ],
+    "provenance": "original evaluation QA with model inference logs",
+    "human_reviewed": true,
+    "scene_description": "In a spa room, one woman speaks twice as a cat passes by and another woman uses a hair dryer in the background."
+  },
+  {
+    "scene_id": 3607,
+    "task": "SNP",
+    "knowledge": "without_SCU, distance, distance",
+    "question": "How many meters away is the guitar from you?",
+    "options": {
+      "A": "About 4.5 meters away.",
+      "B": "About 2.1 meters away.",
+      "C": "About 1.9 meters away.",
+      "D": "About 2.5 meters away."
+    },
+    "answer": "D",
+    "illustration": "assets/scene-3607-speech-tts.png",
+    "audio": "assets/scene-3607.flac",
+    "speech": [
+      {
+        "text": "Is that Rex running around again? He never sits still.",
+        "onset": 1.0,
+        "offset": 4.78
+      },
+      {
+        "text": "Yeah, he's been like this since I put the guitar record on.",
+        "onset": 6.0,
+        "offset": 9.7
+      }
+    ],
+    "provenance": "original evaluation QA with model inference logs",
+    "human_reviewed": true,
+    "scene_description": "In a living room, two men speak while a dog moves across the room, guitar music plays, and a toddler laughs."
+  },
+  {
+    "scene_id": 3607,
+    "task": "SNP",
+    "knowledge": "without_SCU, timing, duration",
+    "question": "For how long is the laughter audible?",
+    "options": {
+      "A": "4.4 s",
+      "B": "3.7 s",
+      "C": "5.5 s",
+      "D": "3.5 s"
+    },
+    "answer": "D",
+    "illustration": "assets/scene-3607-speech-tts.png",
+    "audio": "assets/scene-3607.flac",
+    "speech": [
+      {
+        "text": "Is that Rex running around again? He never sits still.",
+        "onset": 1.0,
+        "offset": 4.78
+      },
+      {
+        "text": "Yeah, he's been like this since I put the guitar record on.",
+        "onset": 6.0,
+        "offset": 9.7
+      }
+    ],
+    "provenance": "original evaluation QA with model inference logs",
+    "human_reviewed": true,
+    "scene_description": "In a living room, two men speak while a dog moves across the room, guitar music plays, and a toddler laughs."
   },
   {
     "scene_id": 3568,

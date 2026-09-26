@@ -1,0 +1,13 @@
+/* Keep the wide overview legible without letting it dominate the page. */
+#overview .overview {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 16px 0;
+  border-bottom: 1px solid #e1e6dd;
+}
+
+#overview .overview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

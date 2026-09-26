@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="508.885444pt" height="539.880391pt" viewBox="0 0 508.885444 539.880391" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="508.885444pt" height="555.880391pt" viewBox="0 0 508.885444 555.880391" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -653,6 +653,22 @@ z
     </g>
     <text style="font-size: 7px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #586052" x="98.632279" y="132.89896" transform="rotate(-0 98.632279 132.89896)">100</text>
    </g>
+   <g id="model-series-6">
+    <path d="M 255.904441 181.023463
+L 322.420513 190.617319
+L 293.464392 250.705639
+L 255.904441 229.020391
+L 255.904441 229.020391
+L 255.904441 229.020391
+L 255.904441 181.023463
+" clip-path="url(#p3840c9216e)" style="fill: none; stroke: #37a3a0; stroke-width: 1.5; stroke-linecap: square"/>
+    <g clip-path="url(#p3840c9216e)" style="fill: #37a3a0; stroke: #37a3a0">
+     <circle cx="255.904441" cy="181.023463" r="1.5"/>
+     <circle cx="322.420513" cy="190.617319" r="1.5"/>
+     <circle cx="293.464392" cy="250.705639" r="1.5"/>
+     <circle cx="255.904441" cy="229.020391" r="1.5"/>
+    </g>
+   </g>
    <g id="model-series-5">
     <path d="M 255.904441 156.066535
 L 340.154939 180.378343
@@ -758,6 +774,13 @@ L 359.725769 523.768281
    </g>
    <g id="model-label-5">
     <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="366.925769" y="526.918281" transform="rotate(-0 366.925769 526.918281)">AuralListener</text>
+   </g>
+   <g id="model-handle-6">
+    <path d="M 213.5 541.268281 L 222.5 541.268281 L 231.5 541.268281" style="fill: none; stroke: #37a3a0; stroke-width: 1.5; stroke-linecap: square"/>
+    <circle cx="222.5" cy="541.268281" r="1.5" style="fill: #37a3a0; stroke: #37a3a0"/>
+   </g>
+   <g id="model-label-6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="238.7" y="544.418281">BAT</text>
    </g>
   </g>
  </g>
