@@ -8,6 +8,11 @@
 }
 
 .hero-authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: clamp(24px, 3vw, 46px);
+  row-gap: 4px;
   margin: 0;
   font-size: 18px;
   font-weight: 600;
@@ -83,7 +88,7 @@
 
 @media (max-width: 700px) {
   .hero-credit { margin-top: 24px; padding-top: 18px; }
-  .hero-authors { font-size: 16px; }
+  .hero-authors { font-size: 16px; column-gap: 18px; }
   .hero-affiliation { font-size: 15px; }
   .hero-affiliation span { display: block; margin: 2px 0; }
   .code-placeholder { margin: -32px auto 60px; }
